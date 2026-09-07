@@ -1,0 +1,10 @@
+# Xcode project files are generated metadata, not hand-written source.
+# Marking them as generated keeps language stats and PR diffs focused on code.
+*.pbxproj linguist-generated=true
+*.pbxproj -diff
+
+*.xcworkspace/* linguist-generated=true
+*.xcscheme linguist-generated=true
+
+# Asset catalogs are resources, not source code.
+*.xcassets/** linguist-generated=true

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24759" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24759"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.9" contentMode="scaleAspectFit" image="LaunchOrb" translatesAutoresizingMaskIntoConstraints="NO" id="orb-01-a1">
+                                <rect key="frame" x="-96" y="-120" width="260" height="260"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.85" contentMode="scaleAspectFit" image="LaunchOrb" translatesAutoresizingMaskIntoConstraints="NO" id="orb-02-b2">
+                                <rect key="frame" x="250" y="640" width="280" height="280"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="stack-hero-01">
+                                <rect key="frame" x="44" y="314" width="305" height="230"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="CityScoutLogo" translatesAutoresizingMaskIntoConstraints="NO" id="logo-01-01">
+                                        <rect key="frame" x="97.5" y="0.0" width="110" height="110"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="110" id="logo-stack-height"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="CityScout" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="label-title-01">
+                                        <rect key="frame" x="0.0" y="124" width="305" height="48"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="38"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Find top activities from the next 7 days of weather" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="label-subtitle-01">
+                                        <rect key="frame" x="0.0" y="186" width="305" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="0.82" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
+                        <color key="backgroundColor" red="0.031372549019607843" green="0.13333333333333333" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="orb-01-a1" firstAttribute="width" constant="260" id="orb1-width"/>
+                            <constraint firstItem="orb-01-a1" firstAttribute="height" constant="260" id="orb1-height"/>
+                            <constraint firstItem="orb-01-a1" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="-96" id="orb1-leading"/>
+                            <constraint firstItem="orb-01-a1" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="-120" id="orb1-top"/>
+                            <constraint firstItem="orb-02-b2" firstAttribute="width" constant="280" id="orb2-width"/>
+                            <constraint firstItem="orb-02-b2" firstAttribute="height" constant="280" id="orb2-height"/>
+                            <constraint firstItem="orb-02-b2" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailing" constant="137" id="orb2-trailing"/>
+                            <constraint firstItem="orb-02-b2" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottom" constant="190" id="orb2-bottom"/>
+                            <constraint firstItem="stack-hero-01" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="stack-center-x"/>
+                            <constraint firstItem="stack-hero-01" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="stack-center-y"/>
+                            <constraint firstItem="stack-hero-01" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="44" id="stack-leading"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LaunchOrb" width="280" height="280"/>
+        <image name="CityScoutLogo" width="256" height="256"/>
+    </resources>
+</document>

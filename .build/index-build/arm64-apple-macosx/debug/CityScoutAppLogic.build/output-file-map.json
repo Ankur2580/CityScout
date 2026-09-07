@@ -1,0 +1,40 @@
+{
+  "": {
+    "swift-dependencies": "/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutAppLogic.build/master.swiftdeps"
+  },
+  "/Users/ankurkothawade/Documents/Projects/CityScout/CityScout/Domain/Models.swift": {
+    "dependencies": "/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutAppLogic.build/Models.d",
+    "object": "/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutAppLogic.build/Models.swift.o",
+    "swiftmodule": "/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutAppLogic.build/Models~partial.swiftmodule",
+    "swift-dependencies": "/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutAppLogic.build/Models.swiftdeps",
+    "diagnostics": "/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutAppLogic.build/Models.dia"
+  },
+  "/Users/ankurkothawade/Documents/Projects/CityScout/CityScout/Domain/Repositories.swift": {
+    "dependencies": "/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutAppLogic.build/Repositories.d",
+    "object": "/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutAppLogic.build/Repositories.swift.o",
+    "swiftmodule": "/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutAppLogic.build/Repositories~partial.swiftmodule",
+    "swift-dependencies": "/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutAppLogic.build/Repositories.swiftdeps",
+    "diagnostics": "/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutAppLogic.build/Repositories.dia"
+  },
+  "/Users/ankurkothawade/Documents/Projects/CityScout/CityScout/Domain/UseCases.swift": {
+    "dependencies": "/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutAppLogic.build/UseCases.d",
+    "object": "/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutAppLogic.build/UseCases.swift.o",
+    "swiftmodule": "/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutAppLogic.build/UseCases~partial.swiftmodule",
+    "swift-dependencies": "/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutAppLogic.build/UseCases.swiftdeps",
+    "diagnostics": "/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutAppLogic.build/UseCases.dia"
+  },
+  "/Users/ankurkothawade/Documents/Projects/CityScout/CityScout/Presentation/DestinationViewModel.swift": {
+    "dependencies": "/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutAppLogic.build/DestinationViewModel.d",
+    "object": "/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutAppLogic.build/DestinationViewModel.swift.o",
+    "swiftmodule": "/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutAppLogic.build/DestinationViewModel~partial.swiftmodule",
+    "swift-dependencies": "/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutAppLogic.build/DestinationViewModel.swiftdeps",
+    "diagnostics": "/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutAppLogic.build/DestinationViewModel.dia"
+  },
+  "/Users/ankurkothawade/Documents/Projects/CityScout/CityScout/Presentation/SearchViewModel.swift": {
+    "dependencies": "/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutAppLogic.build/SearchViewModel.d",
+    "object": "/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutAppLogic.build/SearchViewModel.swift.o",
+    "swiftmodule": "/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutAppLogic.build/SearchViewModel~partial.swiftmodule",
+    "swift-dependencies": "/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutAppLogic.build/SearchViewModel.swiftdeps",
+    "diagnostics": "/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutAppLogic.build/SearchViewModel.dia"
+  }
+}

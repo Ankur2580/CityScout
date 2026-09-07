@@ -1,0 +1,88 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "CityScoutAppLogic-arm64-apple-macosx26.0-debug.module": ["<CityScoutAppLogic-arm64-apple-macosx26.0-debug.module>"]
+  "CityScoutAppLogicTests-arm64-apple-macosx26.0-debug.module": ["<CityScoutAppLogicTests-arm64-apple-macosx26.0-debug.module>"]
+  "CityScoutPackageTests-arm64-apple-macosx26.0-debug.module": ["<CityScoutPackageTests-arm64-apple-macosx26.0-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<CityScoutAppLogic-arm64-apple-macosx26.0-debug.module>"]
+  "test": ["<CityScoutAppLogic-arm64-apple-macosx26.0-debug.module>","<CityScoutAppLogicTests-arm64-apple-macosx26.0-debug.module>"]
+default: "main"
+nodes:
+  "/Users/ankurkothawade/Documents/Projects/CityScout/CityScout/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/ankurkothawade/Documents/Projects/CityScout/Tests/CityScoutAppLogicTests/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutAppLogic.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/ankurkothawade/Documents/Projects/CityScout/CityScout/Domain/Models.swift","/Users/ankurkothawade/Documents/Projects/CityScout/CityScout/Domain/Repositories.swift","/Users/ankurkothawade/Documents/Projects/CityScout/CityScout/Domain/UseCases.swift","/Users/ankurkothawade/Documents/Projects/CityScout/CityScout/Presentation/DestinationViewModel.swift","/Users/ankurkothawade/Documents/Projects/CityScout/CityScout/Presentation/SearchViewModel.swift"]
+    outputs: ["/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutAppLogic.build/sources"]
+    description: "Write auxiliary file /Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutAppLogic.build/sources"
+
+  "/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutAppLogicTests.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/ankurkothawade/Documents/Projects/CityScout/Tests/CityScoutAppLogicTests/ViewModelTests.swift"]
+    outputs: ["/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutAppLogicTests.build/sources"]
+    description: "Write auxiliary file /Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutAppLogicTests.build/sources"
+
+  "/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutPackageTests.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutPackageTests.derived/runner.swift"]
+    outputs: ["/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutPackageTests.build/sources"]
+    description: "Write auxiliary file /Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutPackageTests.build/sources"
+
+  "/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"]
+    outputs: ["/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+
+  "<CityScoutAppLogic-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/Modules/CityScoutAppLogic.swiftmodule"]
+    outputs: ["<CityScoutAppLogic-arm64-apple-macosx26.0-debug.module>"]
+
+  "<CityScoutAppLogicTests-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/Modules/CityScoutAppLogicTests.swiftmodule"]
+    outputs: ["<CityScoutAppLogicTests-arm64-apple-macosx26.0-debug.module>"]
+
+  "<CityScoutPackageTests-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/Modules/CityScoutPackageTests.swiftmodule"]
+    outputs: ["<CityScoutPackageTests-arm64-apple-macosx26.0-debug.module>"]
+
+  "C.CityScoutAppLogic-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/ankurkothawade/Documents/Projects/CityScout/CityScout/Domain/Models.swift","/Users/ankurkothawade/Documents/Projects/CityScout/CityScout/Domain/Repositories.swift","/Users/ankurkothawade/Documents/Projects/CityScout/CityScout/Domain/UseCases.swift","/Users/ankurkothawade/Documents/Projects/CityScout/CityScout/Presentation/DestinationViewModel.swift","/Users/ankurkothawade/Documents/Projects/CityScout/CityScout/Presentation/SearchViewModel.swift","/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutAppLogic.build/sources"]
+    outputs: ["/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/Modules/CityScoutAppLogic.swiftmodule"]
+    description: "Compiling Swift Module 'CityScoutAppLogic' (5 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","CityScoutAppLogic","-emit-dependencies","-emit-module","-emit-module-path","/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/Modules/CityScoutAppLogic.swiftmodule","-output-file-map","/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutAppLogic.build/output-file-map.json","-parse-as-library","-incremental","@/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutAppLogic.build/sources","-I","/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-Onone","-enable-testing","-j12","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutAppLogic.build/include/CityScoutAppLogic-Swift.h","-swift-version","6","-Xfrontend","-experimental-lazy-typecheck","-Xfrontend","-experimental-skip-all-function-bodies","-Xfrontend","-experimental-allow-module-with-compiler-errors","-Xfrontend","-empty-abi-descriptor","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","cityscout"]
+
+  "C.CityScoutAppLogicTests-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/ankurkothawade/Documents/Projects/CityScout/Tests/CityScoutAppLogicTests/ViewModelTests.swift","/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/Modules/CityScoutAppLogic.swiftmodule","/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutAppLogicTests.build/sources"]
+    outputs: ["/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/Modules/CityScoutAppLogicTests.swiftmodule"]
+    description: "Compiling Swift Module 'CityScoutAppLogicTests' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","CityScoutAppLogicTests","-emit-dependencies","-emit-module","-emit-module-path","/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/Modules/CityScoutAppLogicTests.swiftmodule","-output-file-map","/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutAppLogicTests.build/output-file-map.json","-parse-as-library","-incremental","@/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutAppLogicTests.build/sources","-I","/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-Onone","-enable-testing","-Xfrontend","-enable-cross-import-overlays","-j12","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-swift-version","6","-Xfrontend","-experimental-lazy-typecheck","-Xfrontend","-experimental-skip-all-function-bodies","-Xfrontend","-experimental-allow-module-with-compiler-errors","-Xfrontend","-empty-abi-descriptor","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","cityscout"]
+
+  "C.CityScoutPackageTests-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutPackageTests.derived/runner.swift","/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/Modules/CityScoutAppLogicTests.swiftmodule","/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutPackageTests.build/sources"]
+    outputs: ["/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/Modules/CityScoutPackageTests.swiftmodule"]
+    description: "Compiling Swift Module 'CityScoutPackageTests' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","CityScoutPackageTests","-emit-dependencies","-emit-module","-emit-module-path","/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/Modules/CityScoutPackageTests.swiftmodule","-output-file-map","/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutPackageTests.build/output-file-map.json","-parse-as-library","-incremental","@/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutPackageTests.build/sources","-I","/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-Onone","-enable-testing","-Xfrontend","-enable-cross-import-overlays","-j12","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutPackageTests.build/include/CityScoutPackageTests-Swift.h","-Xfrontend","-experimental-lazy-typecheck","-Xfrontend","-experimental-skip-all-function-bodies","-Xfrontend","-experimental-allow-module-with-compiler-errors","-Xfrontend","-empty-abi-descriptor","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","cityscout"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/ankurkothawade/Documents/Projects/CityScout/CityScout/","/Users/ankurkothawade/Documents/Projects/CityScout/Tests/CityScoutAppLogicTests/","/Users/ankurkothawade/Documents/Projects/CityScout/Package.swift","/Users/ankurkothawade/Documents/Projects/CityScout/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutAppLogicTests.build/master.swiftdeps"
+  },
+  "/Users/ankurkothawade/Documents/Projects/CityScout/Tests/CityScoutAppLogicTests/ViewModelTests.swift": {
+    "dependencies": "/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutAppLogicTests.build/ViewModelTests.d",
+    "object": "/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutAppLogicTests.build/ViewModelTests.swift.o",
+    "swiftmodule": "/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutAppLogicTests.build/ViewModelTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutAppLogicTests.build/ViewModelTests.swiftdeps",
+    "diagnostics": "/Users/ankurkothawade/Documents/Projects/CityScout/.build/index-build/arm64-apple-macosx/debug/CityScoutAppLogicTests.build/ViewModelTests.dia"
+  }
+}
